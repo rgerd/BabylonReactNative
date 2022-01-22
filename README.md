@@ -211,6 +211,4 @@ If you believe you have found a security vulnerability in this repository, pleas
 
 ## Known Issues
 
-We have seen issues when using npm 7+ to install local symbolic linked npm packages. For this reason, we suggest using npm 6.13 for BabylonReactNative development. To install npm 6.13, run the following command:
-
-`npm install -g npm@6.13`
+We have seen issues with the `npx gulp buildUWP` command where the build fails with an error similar to "Invalid command line switch for "cmd.exe" System.argumentException: Item has already been added. (PATH vs Path)." To fix this, update Node.JS to at least major version 16.
